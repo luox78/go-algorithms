@@ -4,3 +4,6 @@
     - [支持动态扩容缩容的数组](arrays/dynamic.go)
     - [大小固定的有序数组](arrays/ordered.go)
     - [合并两个有序数组](arrays/merge_test.go)
+
+- [链表](list)
+    - [单链表](list/slist.go)
