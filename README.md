@@ -9,3 +9,4 @@
     - [单链表](list/slist.go)
     - [循环链表](list/clist.go)
     - [双向链表](list/dlist.go)
+    - [单链表反转](list/reversal_test.go)
