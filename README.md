@@ -2,3 +2,4 @@
 
 - [数组](arrays)
     - [支持动态扩容缩容的数组](arrays/dynamic.go)
+    - [大小固定的有序数组](arrays/ordered.go)
