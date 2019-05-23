@@ -1,3 +1,7 @@
+//
+// Package list clist.go
+// 循环链表实现
+//
 package list
 
 import "fmt"
@@ -6,7 +10,7 @@ import "fmt"
 type CList struct {
 	// 数据
 	Value interface{}
-	// 下一个节点
+	// 下一个结点
 	next *CList
 }
 
@@ -22,7 +26,7 @@ func (l *CList) init(v interface{}) *CList {
 	return l
 }
 
-// Next 下一个节点
+// Next 下一个结点
 func (l *CList) Next() *CList {
 	if l.next != nil {
 		return l.next
@@ -30,7 +34,7 @@ func (l *CList) Next() *CList {
 	return nil
 }
 
-// Insert 插入节点值
+// Insert 插入结点值
 func (l *CList) Insert(v interface{}) *CList {
 	if l.next == nil {
 		return l.init(v)
@@ -42,19 +46,19 @@ func (l *CList) Insert(v interface{}) *CList {
 	return l.next
 }
 
-// Update 更新节点值
+// Update 更新结点值
 func (l *CList) Update(v interface{}) *CList {
 	l.Value = v
 	return l
 }
 
-// Remove 移除节点, 返回移除节点的值
+// Remove 移除结点, 返回移除结点的值
 func (l *CList) Remove() interface{} {
 	if l.next == nil {
 		return nil
 	}
 
-	// 找到移除节点的前置节点
+	// 找到移除结点的前驱结点
 	p := l
 	for ; p.next != l; p = p.next {
 	}

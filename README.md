@@ -8,3 +8,4 @@
 - [链表](list)
     - [单链表](list/slist.go)
     - [循环链表](list/clist.go)
+    - [双向链表](list/dlist.go)
