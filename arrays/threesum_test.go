@@ -23,11 +23,6 @@ func TestThreeSum(t *testing.T) {
 	res = threeSum(nums)
 	// [[0 0 0]]
 	t.Log(res)
-
-	nums = []int{-1, 0, 1, 2, -1, -4}
-	res = threeSum(nums)
-	// [[-1 -1 2],[-1 0 1]]
-	t.Log(res)
 }
 
 // 找出符合条件且不重复的三元组
