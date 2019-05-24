@@ -5,7 +5,7 @@ import (
 )
 
 func TestMergeKLists(t *testing.T) {
-	// 	合并 k 个排序链表，返回合并后的排序链表。
+	// 合并 k 个排序链表，返回合并后的排序链表。
 
 	// 示例:
 

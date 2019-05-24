@@ -6,6 +6,7 @@
     - [合并两个有序数组](arrays/merge_test.go)
     - [三数之和](arrays/threesum_test.go)
     - [求众数(散列表法与排序法)](arrays/majority_test.go)
+    - [缺失的第一个正数](arrays/firstmiss_test.go)
 
 - [链表](list)
     - [单链表](list/slist.go)
