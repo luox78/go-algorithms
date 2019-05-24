@@ -15,3 +15,4 @@
     - [求链表的中间结点](list/mid_test.go)
     - [合并两个有序链表](list/merge2_test.go)
     - [链表中是否有环](list/hasring_test.go)
+    - [合并 K 个排序链表](list/mergek_test.go)
