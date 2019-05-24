@@ -11,3 +11,4 @@
     - [双向链表](list/dlist.go)
     - [单链表反转](list/reversal_test.go)
     - [求链表的中间结点](list/mid_test.go)
+    - [合并两个有序链表](list/merge2_test.go)
