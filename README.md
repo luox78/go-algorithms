@@ -17,3 +17,6 @@
     - [合并两个有序链表](list/merge2_test.go)
     - [链表中是否有环](list/hasring_test.go)
     - [合并 K 个排序链表](list/mergek_test.go)
+
+- [栈](stack)
+    - [顺序栈](stack/arraystack.go)
