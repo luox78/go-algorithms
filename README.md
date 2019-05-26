@@ -25,3 +25,4 @@
 - [队列](queue)
     - [顺序队列](queue/arrayqueue.go)
     - [链式队列](queue/listqueue.go)
+    - [循环队列](queue/cyclequeue.go)
