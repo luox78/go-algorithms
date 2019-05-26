@@ -28,6 +28,12 @@ func NewArrayStack(cap int) *ArrayStack {
 	}
 }
 
+// Len 返回栈长度
+func (s *ArrayStack) Len() int { return s.len }
+
+// Cap 返回栈容量
+func (s *ArrayStack) Cap() int { return s.cap }
+
 // Push 入栈
 func (s *ArrayStack) Push(v interface{}) bool {
 	// 栈已满

@@ -20,3 +20,4 @@
 
 - [栈](stack)
     - [顺序栈](stack/arraystack.go)
+    - [链式栈](stack/liststack.go)
