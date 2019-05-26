@@ -18,8 +18,6 @@ type ListStackNode struct {
 type ListStack struct {
 	// 头结点
 	head *ListStackNode
-	// 尾结点
-	tail *ListStackNode
 	// 栈长度
 	len int
 }
@@ -34,15 +32,8 @@ func (s *ListStack) Len() int { return s.len }
 
 // Push 入栈
 func (s *ListStack) Push(v interface{}) {
-	if s.len == 0 {
-		s.head = &ListStackNode{Val: v}
-		s.tail = s.head
-		s.len++
-		return
-	}
-
-	s.tail.next = &ListStackNode{Val: v}
-	s.tail = s.tail.next
+	n := &ListStackNode{Val: v, next: s.head}
+	s.head = n
 	s.len++
 }
 
@@ -51,12 +42,10 @@ func (s *ListStack) Pop() interface{} {
 	if s.len == 0 {
 		return nil
 	}
+
 	n := s.head
 	s.head = s.head.next
 	s.len--
-	if s.len == 0 {
-		s.tail = nil
-	}
 	return n.Val
 }
 
