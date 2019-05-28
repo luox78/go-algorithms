@@ -29,3 +29,4 @@
 
 - [递归](recursion)
     - [斐波那契数列求值](recursion/fib_test.go)
+    - [求阶乘](recursion/factorial_test.go)
