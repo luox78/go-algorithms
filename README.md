@@ -32,3 +32,6 @@
     - [斐波那契数列求值](recursion/fib_test.go)
     - [求阶乘](recursion/factorial_test.go)
     - [求全排列](recursion/permutate_test.go)
+
+- [排序](sort)
+    - [冒泡排序](sort/bubble.go)
