@@ -36,3 +36,4 @@
 - [排序](sort)
     - [冒泡排序](sort/bubble.go)
     - [插入排序](sort/insertion.go)
+    - [选择排序](sort/selection.go)
