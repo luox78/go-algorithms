@@ -38,3 +38,4 @@
     - [插入排序](sort/insertion.go)
     - [选择排序](sort/selection.go)
     - [归并排序](sort/merge.go)
+    - [快速排序](sort/quick.go)
