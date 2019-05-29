@@ -2,7 +2,7 @@ package sort
 
 // BubbleSort 冒泡排序
 func BubbleSort(nums []int) {
-	if len(nums) <= 0 {
+	if len(nums) <= 1 {
 		return
 	}
 
