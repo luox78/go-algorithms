@@ -43,3 +43,4 @@
 
 - [二分查找](binarysearch)
     - [简单二分查找](binarysearch/bsearch_test.go)
+    - [查找第一个值等于给定值的元素](binarysearch/bsearch1_test.go)
