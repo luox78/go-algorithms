@@ -40,3 +40,6 @@
     - [归并排序](sort/merge.go)
     - [快速排序](sort/quick.go)
     - [O(n) 时间复杂度内找到一组数据的第 K 大元素](sort/kth_test.go)
+
+- [二分查找](binarysearch)
+    - [简单二分查找](binarysearch/bsearch_test.go)
