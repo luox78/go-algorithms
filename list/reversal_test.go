@@ -26,15 +26,11 @@ func TestReversal(t *testing.T) {
 
 // 单链表反转
 func reversal(l *SList) {
-	var prev, cur, next *SListNode
-
+	var prev, cur *SListNode
 	cur = l.head
-	for cur != nil {
-		next = cur.next
-		cur.next = prev
-		prev = cur
-		cur = next
-	}
 
+	for cur != nil {
+		cur.next, cur, prev = prev, cur.next, cur
+	}
 	l.head = prev
 }
