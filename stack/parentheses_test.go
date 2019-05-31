@@ -71,3 +71,26 @@ func vaildParentheses(str string) bool {
 
 	return true
 }
+
+func isVaild(str string) bool {
+	mappings := map[string]string{")": "(", "]": "[", "}": "{"}
+	var stack []string
+
+	for _, c := range str {
+		s := string(c)
+
+		if ms, ok := mappings[s]; !ok {
+			stack = append(stack, s)
+		} else {
+			if len(stack) == 0 {
+				return false
+			} else {
+				if ss := stack[len(stack)-1]; ss != ms {
+					return false
+				}
+				stack = stack[:len(stack)-1]
+			}
+		}
+	}
+	return len(stack) == 0
+}
