@@ -20,26 +20,31 @@ func TestVaildParentheses(t *testing.T) {
 	// 输入: "()"
 	// 输出: true
 	t.Log(vaildParentheses("()"))
+	t.Log(isVaild("()"))
 
 	// 示例 2:
 	// 输入: "()[]{}"
 	// 输出: true
 	t.Log(vaildParentheses("()[]{}"))
+	t.Log(isVaild("()[]{}"))
 
 	// 示例 3:
 	// 输入: "(]"
 	// 输出: false
 	t.Log(vaildParentheses("(]"))
+	t.Log(isVaild("(]"))
 
 	// 示例 4:
 	// 输入: "([)]"
 	// 输出: false
 	t.Log(vaildParentheses("([)]"))
+	t.Log(isVaild("([)]"))
 
 	// 示例 5:
 	// 输入: "{[]}"
 	// 输出: true
 	t.Log(vaildParentheses("{[]}"))
+	t.Log(isVaild("{[]}"))
 }
 
 // 有效的括号
@@ -69,7 +74,7 @@ func vaildParentheses(str string) bool {
 
 	}
 
-	return true
+	return stack.Len() == 0
 }
 
 func isVaild(str string) bool {
