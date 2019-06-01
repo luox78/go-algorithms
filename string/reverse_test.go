@@ -13,14 +13,14 @@ func TestReverseString(t *testing.T) {
 	// 输入：["h","e","l","l","o"]
 	// 输出：["o","l","l","e","h"]
 	s := []byte("he")
-	reverseString(s)
+	reverseString1(s)
 	t.Log(string(s))
 
 	// 示例 2：
 	// 输入：["H","a","n","n","a","h"]
 	// 输出：["h","a","n","n","a","H"]
 	s = []byte("Hannah")
-	reverseString(s)
+	reverseString1(s)
 	t.Log(string(s))
 }
 
@@ -32,5 +32,14 @@ func reverseString(s []byte) {
 
 	for i, l := 0, n/2; i < l; i++ {
 		s[i], s[n-1-i] = s[n-1-i], s[i]
+	}
+}
+
+func reverseString1(s []byte) {
+	i, j := 0, len(s)-1
+	for i < j {
+		s[i], s[j] = s[j], s[i]
+		i++
+		j--
 	}
 }
