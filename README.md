@@ -51,6 +51,7 @@
 
 - [散列表](hashtable)
     - [基于链表法解决冲突的散列表](hashtable/listhashtable.go)
+    - [有效的字母异位词](hashtable/isanagram_test.go)
 
 - [字符串](string)
     - [字符串反转](string/reverse_test.go)
