@@ -59,3 +59,4 @@
 - [堆](heap)
     - [小顶堆](heap/minheap.go)
     - [大顶堆](heap/maxheap.go)
+    - [堆排序](heap/sort.go)
