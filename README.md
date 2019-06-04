@@ -61,6 +61,7 @@
     - [前序遍历](binarytree/bst_test.go)
     - [中序遍历](binarytree/bst_test.go)
     - [后序遍历](binarytree/bst_test.go)
+    - [层序遍历](binarytree/bst_test.go)
 
 - [堆](heap)
     - [小顶堆](heap/minheap.go)

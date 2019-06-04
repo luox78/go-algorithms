@@ -3,6 +3,8 @@ package binarytree_test
 import (
 	"testing"
 
+	"github.com/wenjiax/go-algorithms/queue"
+
 	"github.com/wenjiax/go-algorithms/binarytree"
 )
 
@@ -59,6 +61,12 @@ func TestBinarySearchTree(t *testing.T) {
 	postOrder(tree.Find(33), &result3)
 	// [15 13 17 19 27 25 18 16 34 55 51 66 58 50 33]
 	t.Log(result3)
+
+	// 层序遍历
+	var result4 []int
+	levelOrder(tree.Find(33), &result4)
+	// [33 16 50 13 18 34 58 15 17 25 51 66 19 27 55]
+	t.Log(result4)
 }
 
 // 前序遍历
@@ -96,4 +104,31 @@ func postOrder(p *binarytree.TreeNode, result *[]int) {
 	postOrder(p.Right(), result)
 
 	*result = append(*result, p.Val())
+}
+
+// 层序遍历
+func levelOrder(p *binarytree.TreeNode, result *[]int) {
+	if p == nil {
+		return
+	}
+
+	// 借助队列先进先出特性
+	q := queue.NewListQueue()
+	q.Enqueue(p)
+
+	for q.Len() > 0 {
+		// 从队列取出节点
+		node := q.Dequeue().(*binarytree.TreeNode)
+
+		*result = append(*result, node.Val())
+
+		// 将子节点入队列
+		if n := node.Left(); n != nil {
+			q.Enqueue(n)
+		}
+		if n := node.Right(); n != nil {
+			q.Enqueue(n)
+		}
+	}
+
 }
