@@ -54,6 +54,11 @@ func TestBinarySearchTree(t *testing.T) {
 	// [13 15 16 17 18 19 25 27 33 34 50 51 55 58 66]
 	t.Log(result2)
 
+	// 后序遍历
+	var result3 []int
+	postOrder(tree.Find(33), &result3)
+	// [15 13 17 19 27 25 18 16 34 55 51 66 58 50 33]
+	t.Log(result3)
 }
 
 // 前序遍历
@@ -79,4 +84,16 @@ func inOrder(p *binarytree.TreeNode, result *[]int) {
 	*result = append(*result, p.Val())
 
 	inOrder(p.Right(), result)
+}
+
+// 后序遍历
+func postOrder(p *binarytree.TreeNode, result *[]int) {
+	if p == nil {
+		return
+	}
+
+	postOrder(p.Left(), result)
+	postOrder(p.Right(), result)
+
+	*result = append(*result, p.Val())
 }
