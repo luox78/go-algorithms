@@ -41,4 +41,21 @@ func TestBinarySearchTree(t *testing.T) {
 	node := tree.Find(50)
 	// 50 34 58
 	t.Log(node.Val(), node.Left().Val(), node.Right().Val())
+
+	var result []int
+	preOrder(tree.Find(33), &result)
+	// [33 16 13 15 18 17 25 19 27 50 34 58 51 55 66]
+	t.Log(result)
+}
+
+// 前序遍历
+func preOrder(p *binarytree.TreeNode, result *[]int) {
+	if p == nil {
+		return
+	}
+
+	*result = append(*result, p.Val())
+
+	preOrder(p.Left(), result)
+	preOrder(p.Right(), result)
 }
