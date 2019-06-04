@@ -56,6 +56,9 @@
 - [字符串](string)
     - [字符串反转](string/reverse_test.go)
 
+- [二叉树](binarytree)
+    - [二叉搜索树](binarytree/bst.go)
+
 - [堆](heap)
     - [小顶堆](heap/minheap.go)
     - [大顶堆](heap/maxheap.go)
