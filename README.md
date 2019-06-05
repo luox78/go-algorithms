@@ -63,6 +63,7 @@
     - [145. 后序遍历](binarytree/postorder_test.go)
     - [层序遍历](binarytree/levelorder_test.go)
     - [98. 验证二叉搜索树](binarytree/validbst_test.go)
+    - [226. 翻转二叉树](binarytree/inverttree_test.go)
 
 - [堆](heap)
     - [小顶堆](heap/minheap.go)
