@@ -33,18 +33,13 @@ func TestInvertTree(t *testing.T) {
 	tree.Insert(9)
 
 	// 翻转前：[1 2 3 4 6 7 9]
-	var res []int
-	inOrder(tree.root, &res)
-	t.Log(res)
+	t.Log(inOrder(tree.root))
 
 	// 翻转
 	root := invertTree(tree.root)
 
 	// 翻转后：[9 7 6 4 3 2 1]
-	var res1 []int
-	inOrder(root, &res1)
-	t.Log(res1)
-
+	t.Log(inOrder(root))
 }
 
 // 翻转二叉树
@@ -59,12 +54,10 @@ func invertTree(root *TreeNode) *TreeNode {
 }
 
 // 中序遍历
-func inOrder(root *TreeNode, res *[]int) {
+func inOrder(root *TreeNode) []int {
 	if root == nil {
-		return
+		return nil
 	}
 
-	inOrder(root.left, res)
-	*res = append(*res, root.val)
-	inOrder(root.right, res)
+	return append(append(append([]int{}, inOrder(root.left)...), root.val), inOrder(root.right)...)
 }
