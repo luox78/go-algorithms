@@ -64,6 +64,7 @@
     - [145. 后序遍历](binarytree/postorder_test.go)
     - [102. 层序遍历](binarytree/levelorder_test.go)
     - [104. 二叉树的最大深度](binarytree/maxdepth_test.go)
+    - [111. 二叉树的最小深度](binarytree/mindepth_test.go)
     - [98. 验证二叉搜索树](binarytree/validbst_test.go)
     - [226. 翻转二叉树](binarytree/inverttree_test.go)
     - [235. 二叉搜索树的最近公共祖先](binarytree/bstlca_test.go)
