@@ -47,6 +47,9 @@ func TestMinDepth(t *testing.T) {
 
 	// 最小深度 3
 	t.Log(minDepthDFS(tree.Find(33)))
+
+	// 最小深度 3
+	t.Log(minDepthBFS(tree.Find(33)))
 }
 
 // 找出二叉树最小深度, DFS 实现
@@ -66,4 +69,35 @@ func minDepthDFS(root *binarytree.TreeNode) int {
 		return left + 1
 	}
 	return right + 1
+}
+
+// 找出二叉树最小深度, BFS 实现
+func minDepthBFS(root *binarytree.TreeNode) int {
+	if root == nil {
+		return 0
+	}
+	var queue []*binarytree.TreeNode
+	queue = append(queue, root)
+
+	var level int
+	for len(queue) > 0 {
+		for i, l := 0, len(queue); i < l; i++ {
+			p := queue[0]
+			queue = queue[1:]
+
+			if p.Left() == nil && p.Right() == nil {
+				return level + 1
+			}
+
+			if p.Left() != nil {
+				queue = append(queue, p.Left())
+			}
+			if p.Right() != nil {
+				queue = append(queue, p.Right())
+			}
+
+		}
+		level++
+	}
+	return level
 }
