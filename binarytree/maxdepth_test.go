@@ -48,6 +48,9 @@ func TestMaxDepth(t *testing.T) {
 
 	// 最大深度 5
 	t.Log(maxDepthDFS(tree.Find(33)))
+
+	// 最大深度 5
+	t.Log(maxDepthBFS(tree.Find(33)))
 }
 
 // 找出二叉树最大深度, DFS 实现
@@ -61,4 +64,33 @@ func maxDepthDFS(root *binarytree.TreeNode) int {
 		return left + 1
 	}
 	return right + 1
+}
+
+// 找出二叉树最大深度, BFS 实现
+func maxDepthBFS(root *binarytree.TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	var queue []*binarytree.TreeNode
+	queue = append(queue, root)
+
+	var level int
+	for len(queue) > 0 {
+
+		for i, l := 0, len(queue); i < l; i++ {
+			p := queue[0]
+			queue = queue[1:]
+
+			if p.Left() != nil {
+				queue = append(queue, p.Left())
+			}
+			if p.Right() != nil {
+				queue = append(queue, p.Right())
+			}
+		}
+
+		level++
+	}
+	return level
 }
