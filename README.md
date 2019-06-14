@@ -33,6 +33,7 @@
     - [求阶乘](recursion/factorial_test.go)
     - [求全排列](recursion/permutate_test.go)
     - [50. Pow(x, n)](recursion/pow_test.go)
+    - [22. 括号生成](recursion/genparenthesis_test.go)
 
 - [排序](sort)
     - [冒泡排序](sort/bubble.go)
