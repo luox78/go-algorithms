@@ -42,6 +42,7 @@ func TestFlatten(t *testing.T) {
 	t.Log(inOrder(tree.Find(4)))
 
 	flatten(tree.Find(4))
+	// flatten1(tree.Find(4))
 
 	// [4 2 1 3 5 6]
 	t.Log(preOrder(tree.Find(4)))
@@ -67,6 +68,38 @@ func flatten(root *TreeNode) {
 		p = p.right
 	}
 	p.right = tmp
+}
+
+// 将二叉树展开为链表, 非递归实现
+func flatten1(root *TreeNode) {
+	if root == nil {
+		return
+	}
+
+	var stack []*TreeNode
+
+	p := root
+	for p != nil || len(stack) > 0 {
+		for p != nil {
+			stack = append(stack, p)
+			p = p.left
+		}
+
+		if len(stack) > 0 {
+			n := len(stack) - 1
+			p = stack[n]
+			stack = stack[:n]
+
+			tmp := p.right
+			p.right, p.left = p.left, nil
+
+			for p.right != nil {
+				p = p.right
+			}
+			p.right = tmp
+			p = tmp
+		}
+	}
 }
 
 func preOrder(root *TreeNode) []int {
