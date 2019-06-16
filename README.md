@@ -80,3 +80,6 @@
 
 - [贪心算法](greedy)
     - [122. 买卖股票的最佳时机 II](greedy/maxprofit_test.go)
+
+- [回溯算法](backtrack)
+    - [51. N皇后](backtrack/queens_test.go)
