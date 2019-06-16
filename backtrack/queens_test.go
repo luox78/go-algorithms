@@ -1,7 +1,6 @@
 package backtrack_test
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,10 +35,6 @@ func solveNQueens(n int) [][]string {
 	var result [][]int
 
 	backtrack(0, n, []int{}, &result)
-
-	for _, r := range result {
-		fmt.Println(r)
-	}
 
 	return generateResult(result, n)
 }
