@@ -18,6 +18,7 @@
     - [141. 链表中是否有环](list/hasring_test.go)
     - [142. 环形链表 II](list/hasring2_test.go)
     - [23. 合并 K 个排序链表](list/mergek_test.go)
+    - [链表的倒数第 K 个节点](list/lastk_test.go)
 
 - [栈](stack)
     - [顺序栈](stack/arraystack.go)
