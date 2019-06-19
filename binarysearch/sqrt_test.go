@@ -11,6 +11,7 @@ func TestSqrt(t *testing.T) {
 	// 输入: 4
 	// 输出: 2
 	t.Log(sqrt(4))
+	t.Log(sqrt1(8))
 
 	// 示例 2:
 
@@ -20,7 +21,7 @@ func TestSqrt(t *testing.T) {
 	// 	 由于返回类型是整数，小数部分将被舍去。
 	t.Log(sqrt(8))
 
-	t.Logf("%f", 10e-9)
+	t.Log(sqrt1(8))
 }
 
 func sqrt(x int) int {
@@ -43,4 +44,13 @@ func sqrt(x int) int {
 	}
 
 	return i - 1
+}
+
+// 牛顿迭代法
+func sqrt1(x int) int {
+	r := x
+	for r*r > x {
+		r = (r + x/r) / 2
+	}
+	return r
 }
