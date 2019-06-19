@@ -1,6 +1,9 @@
 package binarysearch_test
 
-import "testing"
+import (
+	"math"
+	"testing"
+)
 
 func TestSqrt(t *testing.T) {
 	// 计算并返回 x 的平方根，其中 x 是非负整数。
@@ -22,6 +25,8 @@ func TestSqrt(t *testing.T) {
 	t.Log(sqrt(8))
 
 	t.Log(sqrt1(8))
+
+	t.Log(sqrt2(8, 0.000001))
 }
 
 func sqrt(x int) int {
@@ -53,4 +58,21 @@ func sqrt1(x int) int {
 		r = (r + x/r) / 2
 	}
 	return r
+}
+
+func sqrt2(x int, precision float64) float64 {
+	l, r, n := float64(0), float64(x), float64(x)
+
+	for l <= r {
+		mid := l + (r-l)/2
+
+		if math.Abs(mid*mid/n-1) <= precision {
+			return mid
+		} else if mid*mid > n {
+			r = mid
+		} else {
+			l = mid
+		}
+	}
+	return -1.0
 }
