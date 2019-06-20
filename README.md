@@ -89,6 +89,7 @@
     - [52. N皇后 II](backtrack/totalq_test.go)
     - [36. 有效的数独](backtrack/validsudoku_test.go)
     - [37. 解数独](backtrack/sudoku_test.go)
+    - [79. 单词搜索](backtrack/wsearch_test.go)
 
 - [Trie](trie)
     - [208. 实现 Trie (前缀树)](trie/trie.go)
