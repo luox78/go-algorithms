@@ -97,3 +97,4 @@
 
 - [位运算](bit)
     - [191. 位1的个数](bit/count_test.go)
+    - [231. 2的幂](bit/powerof2_test.go)
