@@ -25,6 +25,7 @@
     - [顺序栈](stack/arraystack.go)
     - [链式栈](stack/liststack.go)
     - [20. 有效的括号](stack/parentheses_test.go)
+    - [最小栈](stack/minstack.go)
 
 - [队列](queue)
     - [顺序队列](queue/arrayqueue.go)
