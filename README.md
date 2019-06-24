@@ -7,6 +7,7 @@
     - [15. 三数之和](arrays/threesum_test.go)
     - [169. 求众数(散列表法与排序法)](arrays/majority_test.go)
     - [41. 缺失的第一个正数](arrays/firstmiss_test.go)
+    - [485. 最大连续1的个数](arrays/maxones_test.go)
 
 - [链表](list)
     - [单链表](list/slist.go)
