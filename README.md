@@ -80,6 +80,7 @@
     - [226. 翻转二叉树](binarytree/inverttree_test.go)
     - [235. 二叉搜索树的最近公共祖先](binarytree/bstlca_test.go)
     - [236. 二叉树的最近公共祖先](binarytree/lca_test.go)
+    - [124. 二叉树中的最大路径和](binarytree/maxpathsum_test.go)
 
 - [堆](heap)
     - [小顶堆](heap/minheap.go)
