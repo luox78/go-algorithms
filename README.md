@@ -106,3 +106,4 @@
     - [191. 位1的个数](bit/count_test.go)
     - [231. 2的幂](bit/powerof2_test.go)
     - [338. 比特位计数](bit/countbits_test.go)
+    - [52. N皇后 II（位运算）](bit/totalq_test.go)
