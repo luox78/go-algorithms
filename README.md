@@ -110,3 +110,4 @@
 
 - [动态规划](dp)
     - [70. 爬楼梯](dp/climbstairs_test.go)
+    - [120. 三角形最小路径和](dp/minitotal_test.go)
