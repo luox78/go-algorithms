@@ -107,3 +107,6 @@
     - [231. 2的幂](bit/powerof2_test.go)
     - [338. 比特位计数](bit/countbits_test.go)
     - [52. N皇后 II（位运算）](bit/totalq_test.go)
+
+- [动态规划](dp)
+    - [70. 爬楼梯](dp/climbstairs_test.go)
