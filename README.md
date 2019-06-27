@@ -112,3 +112,4 @@
     - [70. 爬楼梯](dp/climbstairs_test.go)
     - [120. 三角形最小路径和](dp/minitotal_test.go)
     - [152. 乘积最大子序列](dp/maxproduct_test.go)
+    - [300. 最长上升子序列](dp/lis_test.go)
