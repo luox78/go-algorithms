@@ -113,4 +113,6 @@
     - [120. 三角形最小路径和](dp/minitotal_test.go)
     - [152. 乘积最大子序列](dp/maxproduct_test.go)
     - [121. 买卖股票的最佳时机](dp/maxprofit_test.go)
+    - [123. 买卖股票的最佳时机 III](dp/maxprofit2_test.go)
+    - [188. 买卖股票的最佳时机 IV](dp/maxprofitk_test.go)
     - [300. 最长上升子序列](dp/lis_test.go)
