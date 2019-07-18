@@ -121,3 +121,6 @@
     - [300. 最长上升子序列](dp/lis_test.go)
     - [322. 零钱兑换](dp/coinchange_test.go)
     - [72. 编辑距离](dp/mindistance_test.go)
+
+- [并查集](unionfind)
+    - [200. 岛屿数量](unionfind/numislands_test.go)
