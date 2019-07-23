@@ -125,3 +125,6 @@
 - [并查集](unionfind)
     - [200. 岛屿数量](unionfind/numislands_test.go)
     - [547. 朋友圈](unionfind/findcirclenum_test.go)
+
+- [LRU](lru)
+    - [146. LRU缓存机制](lru/lru.go)
