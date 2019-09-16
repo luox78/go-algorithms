@@ -60,6 +60,7 @@
   - [查找最后一个小于等于给定值的元素](binarysearch/bsearch4_test.go)
   - [69. 求 x 的平方根](binarysearch/sqrt_test.go)
   - [153. 寻找旋转排序数组中的最小值](binarysearch/min_test.go)
+  - [154. 寻找旋转排序数组中的最小值 II](binarysearch/findmin_test.go)
 
 - [散列表](hashtable)
   - [基于链表法解决冲突的散列表](hashtable/listhashtable.go)
